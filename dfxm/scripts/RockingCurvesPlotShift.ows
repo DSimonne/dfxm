@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="dimension definition" qualified_name="orangecontrib.darfix.widgets.dimensions.DimensionWidgetOW" project_name="darfix" version="" title="dimension definition" position="(330.0, 147.0)" />
+		<node id="1" name="noise removal" qualified_name="orangecontrib.darfix.widgets.noiseremoval.NoiseRemovalWidgetOW" project_name="darfix" version="" title="noise removal" position="(719.0, 148.0)" />
+		<node id="2" name="HDF5 data selection" qualified_name="orangecontrib.darfix.widgets.hdf5dataselection.HDF5DataSelectionWidgetOW" project_name="darfix" version="" title="HDF5 data selection" position="(137.0, 148.0)" />
+		<node id="3" name="shift correction" qualified_name="orangecontrib.darfix.widgets.shiftcorrection.ShiftCorrectionWidgetOW" project_name="darfix" version="" title="shift correction" position="(528.0, 148.0)" />
+		<node id="4" name="rocking curves" qualified_name="orangecontrib.darfix.widgets.rockingcurves.RockingCurvesWidgetOW" project_name="darfix" version="" title="rocking curves" position="(901.0, 147.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="2" sink_node_id="0" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+		<link id="1" source_node_id="3" sink_node_id="1" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+		<link id="2" source_node_id="0" sink_node_id="3" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+		<link id="3" source_node_id="1" sink_node_id="4" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">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
+</properties>
+		<properties node_id="1" format="pickle">gASV6QEAAAAAAAB9lCiMFV9ld29rc19kZWZhdWx0X2lucHV0c5R9lIwKb3BlcmF0aW9uc5RdlCiM
+GGRhcmZpeC5jb3JlLm5vaXNlcmVtb3ZhbJSMFU5vaXNlUmVtb3ZhbE9wZXJhdGlvbpSTlCmBlH2U
+KIwEdHlwZZSME2RhcmZpeC5jb3JlLmRhdGFzZXSUjAlPcGVyYXRpb26Uk5RLAYWUUpSMCnBhcmFt
+ZXRlcnOUfZQojAZtZXRob2SUjAZtZWRpYW6UjARzdGVwlE6MBmNodW5rc5ROjA9iYWNrZ3JvdW5k
+X3R5cGWUjAREYXRhlHV1YmgHKYGUfZQoaApoDUsChZRSlGgQfZSMC2tlcm5lbF9zaXpllEsDc3Vi
+ZXOMD19ld29rc19leGVjaW5mb5R9lIwTX2V3b2tzX3Rhc2tfb3B0aW9uc5R9lIwOX2V3b2tzX3Zh
+cmluZm+UfZSMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjA5kZWZhdWx0X2lucHV0c5R9lIwTc2F2ZWRX
+aWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAABEAAAAB8AAATwAAADBQAAARwAAABZAAAE5AAAAvkA
+AAAAAAAAAAYAAAABHAAAAFkAAATkAAAC+ZSMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+		<properties node_id="2" format="literal">{'_ewoks_default_inputs': {'raw_input_file': '/gpfs/gb/data/visitor/ma6283/id03/20250123/PROCESSED_DATA/Fe_22440003/Fe_22440003_mosa_proj_2x/Fe_22440003_mosa_proj_2x_darfix_concat.h5', 'raw_detector_data_path': '{first_scan}/measurement/{detector}', 'raw_metadata_path': '{first_scan}/instrument/positioners', 'workflow_title': '', 'in_memory': True}, '_ewoks_execinfo': {}, '_ewoks_task_options': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01d\x00\x00\x00\x89\x00\x00\x04\xda\x00\x00\x02X\x00\x00\x01p\x00\x00\x00\xc3\x00\x00\x04\xce\x00\x00\x02L\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01p\x00\x00\x00\xc3\x00\x00\x04\xce\x00\x00\x02L', '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'_ewoks_default_inputs': {'shift': [-0.0, 0.0]}, '_ewoks_execinfo': {}, '_ewoks_task_options': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xf1\x00\x00\x00\x1f\x00\x00\x04\xf8\x00\x00\x02\x87\x00\x00\x00\xfd\x00\x00\x00Y\x00\x00\x04\xec\x00\x00\x02{\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\xfd\x00\x00\x00Y\x00\x00\x04\xec\x00\x00\x02{', '__version__': 1}</properties>
+		<properties node_id="4" format="literal">{'_ewoks_default_inputs': {}, '_ewoks_execinfo': {}, '_ewoks_task_options': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00W\x00\x00\x00\x1f\x00\x00\x05\xa8\x00\x00\x03\x19\x00\x00\x00c\x00\x00\x00Y\x00\x00\x05\x9c\x00\x00\x03\r\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00c\x00\x00\x00Y\x00\x00\x05\x9c\x00\x00\x03\r', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

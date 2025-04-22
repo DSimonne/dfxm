@@ -1,0 +1,60 @@
+import setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="dfxm",
+    version="0.1",
+    description="Python package for dfxm data analysis",
+    author="David Simonne",
+    author_email="dsimonne@mit.edu",
+    # download_url="https://pypi.org/project/gwaihir/",
+    data_files=[('', ["licence.txt",
+                      ])],
+    url="https://github.com/DSimonne/dfxm",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT",
+        "Operating System :: OS Independent",
+    ],
+    scripts=[
+        "dfxm/scripts/AllocateTerminalRessources.sh",
+        "dfxm/scripts/AllocateWorkflowRessources.py",
+        "dfxm/scripts/CleanStrainDirectories.sh",
+        "dfxm/scripts/RunDarfixWorkflow.py",
+        "dfxm/scripts/RockingCurvesInteractive.ows",
+        "dfxm/scripts/RockingCurvesPlotNoShift.ows",
+        "dfxm/scripts/RockingCurvesPlotShift.ows",
+        "dfxm/scripts/WorkflowGrainPlotNoShift.ows",
+        "dfxm/scripts/WorkflowGrainPlotShift.ows",
+    ],
+    keywords=["DFXM"],
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    packages=setuptools.find_packages(),
+    include_package_data=True,
+    python_requires='>=3.6',
+    install_requires=[
+        "numpy",
+        "pandas",
+        "datetime",
+        "argparse",
+        "ewoks",
+        "matplotlib",
+        "ipywidgets",
+        "ipython",
+        "ipyvolume",
+        "scipy",
+        "xrayutilities",
+        "tables",
+        "h5glance",
+        "PyQt5",
+        "h5py",
+        "jupyter",
+        "bokeh",
+        "panel",
+        "pyvista",
+        "tqdm",
+    ]
+)

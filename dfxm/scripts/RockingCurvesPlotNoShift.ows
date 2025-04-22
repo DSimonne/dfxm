@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="dimension definition" qualified_name="orangecontrib.darfix.widgets.dimensions.DimensionWidgetOW" project_name="darfix" version="" title="dimension definition" position="(330.0, 147.0)" />
+		<node id="1" name="noise removal" qualified_name="orangecontrib.darfix.widgets.noiseremoval.NoiseRemovalWidgetOW" project_name="darfix" version="" title="noise removal" position="(719.0, 148.0)" />
+		<node id="2" name="HDF5 data selection" qualified_name="orangecontrib.darfix.widgets.hdf5dataselection.HDF5DataSelectionWidgetOW" project_name="darfix" version="" title="HDF5 data selection" position="(137.0, 148.0)" />
+		<node id="3" name="rocking curves" qualified_name="orangecontrib.darfix.widgets.rockingcurves.RockingCurvesWidgetOW" project_name="darfix" version="" title="rocking curves" position="(901.0, 147.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="2" sink_node_id="0" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+		<link id="1" source_node_id="1" sink_node_id="3" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+		<link id="2" source_node_id="0" sink_node_id="1" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">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
+</properties>
+		<properties node_id="1" format="pickle">gASVqgEAAAAAAAB9lCiMFV9ld29rc19kZWZhdWx0X2lucHV0c5R9lIwKb3BlcmF0aW9uc5RdlCh9
+lCiMBHR5cGWUjBNkYXJmaXguY29yZS5kYXRhc2V0lIwJT3BlcmF0aW9ulJOUSwGFlFKUjApwYXJh
+bWV0ZXJzlH2UKIwGbWV0aG9klIwGbWVkaWFulIwEc3RlcJROjAZjaHVua3OUTowPYmFja2dyb3Vu
+ZF90eXBllIwERGF0YZR1dX2UKGgGaAlLAoWUUpRoDH2UjAtrZXJuZWxfc2l6ZZRLA3N1ZXOMD19l
+d29rc19leGVjaW5mb5R9lIwTX2V3b2tzX3Rhc2tfb3B0aW9uc5R9lIwOX2V3b2tzX3ZhcmluZm+U
+fZSMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjA5kZWZhdWx0X2lucHV0c5R9lIwTc2F2ZWRXaWRnZXRH
+ZW9tZXRyeZRDQgHZ0MsAAwAAAAABFwAAAB8AAATpAAAC4QAAARwAAAA8AAAE5AAAAtwAAAAAAAAA
+AAYAAAABHAAAADwAAATkAAAC3JSMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+		<properties node_id="2" format="literal">{'_ewoks_default_inputs': {'raw_input_file': '/gpfs/gb/data/visitor/ma6283/id03/20250123/PROCESSED_DATA/Fe_22440003/Fe_22440003_strain_proj_2x_redo_3/Fe_22440003_strain_proj_2x_redo_3_darfix_concat.h5', 'raw_detector_data_path': '{first_scan}/measurement/{detector}', 'raw_metadata_path': '{first_scan}/instrument/positioners', 'workflow_title': '', 'in_memory': True}, '_ewoks_execinfo': {}, '_ewoks_task_options': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01d\x00\x00\x00\x89\x00\x00\x04\xda\x00\x00\x02X\x00\x00\x01p\x00\x00\x00\xc3\x00\x00\x04\xce\x00\x00\x02L\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01p\x00\x00\x00\xc3\x00\x00\x04\xce\x00\x00\x02L', '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'_ewoks_default_inputs': {'int_thresh': '15', 'method': 'lm'}, '_ewoks_execinfo': {}, '_ewoks_task_options': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xbb\x00\x00\x00\x1f\x00\x00\x06\n\x00\x00\x02\xf5\x00\x00\x00\xc0\x00\x00\x00&lt;\x00\x00\x06\x05\x00\x00\x02\xf0\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\xc0\x00\x00\x00&lt;\x00\x00\x06\x05\x00\x00\x02\xf0', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="dimension definition" qualified_name="orangecontrib.darfix.widgets.dimensions.DimensionWidgetOW" project_name="darfix" version="" title="dimension definition" position="(291.0, 148.0)" />
+		<node id="1" name="noise removal" qualified_name="orangecontrib.darfix.widgets.noiseremoval.NoiseRemovalWidgetOW" project_name="darfix" version="" title="noise removal" position="(716.0, 302.0)" />
+		<node id="2" name="HDF5 data selection" qualified_name="orangecontrib.darfix.widgets.hdf5dataselection.HDF5DataSelectionWidgetOW" project_name="darfix" version="" title="HDF5 data selection" position="(137.0, 148.0)" />
+		<node id="3" name="shift correction" qualified_name="orangecontrib.darfix.widgets.shiftcorrection.ShiftCorrectionWidgetOW" project_name="darfix" version="" title="shift correction" position="(594.0, 148.0)" />
+		<node id="4" name="rocking curves" qualified_name="orangecontrib.darfix.widgets.rockingcurves.RockingCurvesWidgetOW" project_name="darfix" version="" title="rocking curves" position="(889.0, 302.0)" />
+		<node id="5" name="z sum" qualified_name="orangecontrib.darfix.widgets.zsum.ZSumWidgetOW" project_name="darfix" version="" title="z sum" position="(740.0, 151.0)" />
+		<node id="6" name="roi selection" qualified_name="orangecontrib.darfix.widgets.roiselection.RoiSelectionWidgetOW" project_name="darfix" version="" title="roi selection" position="(446.0, 148.0)" />
+		<node id="7" name="z sum" qualified_name="orangecontrib.darfix.widgets.zsum.ZSumWidgetOW" project_name="darfix" version="" title="z sum (1)" position="(584.0, 25.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="2" sink_node_id="0" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+		<link id="1" source_node_id="0" sink_node_id="6" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+		<link id="2" source_node_id="6" sink_node_id="3" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+		<link id="3" source_node_id="3" sink_node_id="5" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+		<link id="4" source_node_id="1" sink_node_id="4" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+		<link id="5" source_node_id="6" sink_node_id="7" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+		<link id="6" source_node_id="6" sink_node_id="1" source_channel="dataset" sink_channel="dataset" enabled="true" source_channel_id="dataset" sink_channel_id="dataset" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">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
+</properties>
+		<properties node_id="1" format="pickle">gASV6QEAAAAAAAB9lCiMFV9ld29rc19kZWZhdWx0X2lucHV0c5R9lIwKb3BlcmF0aW9uc5RdlCiM
+GGRhcmZpeC5jb3JlLm5vaXNlcmVtb3ZhbJSMFU5vaXNlUmVtb3ZhbE9wZXJhdGlvbpSTlCmBlH2U
+KIwEdHlwZZSME2RhcmZpeC5jb3JlLmRhdGFzZXSUjAlPcGVyYXRpb26Uk5RLAYWUUpSMCnBhcmFt
+ZXRlcnOUfZQojAZtZXRob2SUjAZtZWRpYW6UjARzdGVwlE6MBmNodW5rc5ROjA9iYWNrZ3JvdW5k
+X3R5cGWUjAREYXRhlHV1YmgHKYGUfZQoaApoDUsChZRSlGgQfZSMC2tlcm5lbF9zaXpllEsDc3Vi
+ZXOMD19ld29rc19leGVjaW5mb5R9lIwTX2V3b2tzX3Rhc2tfb3B0aW9uc5R9lIwOX2V3b2tzX3Zh
+cmluZm+UfZSMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjA5kZWZhdWx0X2lucHV0c5R9lIwTc2F2ZWRX
+aWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAABEAAAAB8AAATwAAADBQAAARwAAABZAAAE5AAAAvkA
+AAAAAAAAAAYAAAABHAAAAFkAAATkAAAC+ZSMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+		<properties node_id="2" format="literal">{'_ewoks_default_inputs': {'raw_input_file': '/gpfs/gb/data/visitor/ma6283/id03/20250123/PROCESSED_DATA/Fe_22440003/Fe_22440003_strain_proj_2x__corrosion_step_1_redo_2/Fe_22440003_strain_proj_2x__corrosion_step_1_redo_2_darfix_concat.h5', 'raw_detector_data_path': '{first_scan}/measurement/{detector}', 'raw_metadata_path': '{first_scan}/instrument/positioners', 'workflow_title': '', 'in_memory': True}, '_ewoks_execinfo': {}, '_ewoks_task_options': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01d\x00\x00\x00\x89\x00\x00\x04\xda\x00\x00\x02X\x00\x00\x01p\x00\x00\x00\xc3\x00\x00\x04\xce\x00\x00\x02L\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01p\x00\x00\x00\xc3\x00\x00\x04\xce\x00\x00\x02L', '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'_ewoks_default_inputs': {'shift': [-0.0, 0.0]}, '_ewoks_execinfo': {}, '_ewoks_task_options': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xf8\x00\x00\x00&lt;\x00\x00\x04\xf1\x00\x00\x02\x80\x00\x00\x00\xfd\x00\x00\x00Y\x00\x00\x04\xec\x00\x00\x02{\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\xfd\x00\x00\x00Y\x00\x00\x04\xec\x00\x00\x02{', '__version__': 1}</properties>
+		<properties node_id="4" format="literal">{'_ewoks_default_inputs': {}, '_ewoks_execinfo': {}, '_ewoks_task_options': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00W\x00\x00\x00\x1f\x00\x00\x05\xa8\x00\x00\x03\x19\x00\x00\x00c\x00\x00\x00Y\x00\x00\x05\x9c\x00\x00\x03\r\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00c\x00\x00\x00Y\x00\x00\x05\x9c\x00\x00\x03\r', '__version__': 1}</properties>
+		<properties node_id="5" format="literal">{'_ewoks_default_inputs': {}, '_ewoks_execinfo': {}, '_ewoks_task_options': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\x03\x00\x00\x00&lt;\x00\x00\x04\xfc\x00\x00\x02\x8e\x00\x00\x01\x08\x00\x00\x00Y\x00\x00\x04\xf7\x00\x00\x02\x89\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01\x08\x00\x00\x00Y\x00\x00\x04\xf7\x00\x00\x02\x89', '__version__': 1}</properties>
+		<properties node_id="6" format="literal">{'_ewoks_default_inputs': {'roi_origin': [96.74878587196463, 273.06666666666666], 'roi_size': [1751.122884473878, 1399.045267489712]}, '_ewoks_execinfo': {}, '_ewoks_task_options': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xea\x00\x00\x00\x1f\x00\x00\x05\x01\x00\x00\x02\x8b\x00\x00\x00\xf6\x00\x00\x00Y\x00\x00\x04\xf5\x00\x00\x02\x7f\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\xf6\x00\x00\x00Y\x00\x00\x04\xf5\x00\x00\x02\x7f', '__version__': 1}</properties>
+		<properties node_id="7" format="literal">{'_ewoks_default_inputs': {}, '_ewoks_execinfo': {}, '_ewoks_task_options': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\x03\x00\x00\x00&lt;\x00\x00\x04\xfc\x00\x00\x02\x8e\x00\x00\x01\x08\x00\x00\x00Y\x00\x00\x04\xf7\x00\x00\x02\x89\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01\x08\x00\x00\x00Y\x00\x00\x04\xf7\x00\x00\x02\x89', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
