@@ -56,3 +56,18 @@ def compute_pixel_size(scan):
     print(f"Effective pixel size: {effective_pixel_size*5:.3f} nm (2X objective).")
 
     return np.round(effective_pixel_size, 3)
+
+def compute_penetration_depth(scan):
+    """
+    Assumes a penetration depth of 30 um for X-rays at 19 keV in Ni 
+    based on data from https://henke.lbl.gov/optical_constants/atten2.html
+    """
+    penetration_depth = 30 # um
+    with h5py.File(scan) as f:
+        positioners = f["entry_0000"]["instrument"]["positioners"]
+
+        two_theta = positioners["obpitch"][...][0] # degrees
+        print(f"Two theta: {two_theta:.3f} deg.")
+        
+    penetration_depth = np.sin(np.deg2rad(two_theta/2)) * penetration_depth
+    print(f"Penetration depth: {penetration_depth:.3f} um.")
